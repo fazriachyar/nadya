@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>❤️❤️❤️❤️❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,span,a {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: darkslategrey;
+}
+
+body {
+    background: linear-gradient(-45deg, #fdcbf1, #fdcbf1, #e6dee9, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.w3-wide {letter-spacing: 5px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-display-middle {text-align: center;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<audio id="myAudio">
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <script> 
+        var today = new Date();
+        var hourNow = today.getHours();
+        var greeting;
+    
+        if (hourNow > 18) {
+            greeting = 'Selamat Malam';
+        } else if (hourNow > 12) {
+            greeting = 'Selamat Sore';
+        } else if (hourNow > 0) {
+            greeting = 'Selamat Pagi';
+        } else {
+            greeting = 'Selamat Datang';
+        }
+        document.write('<a href="#home" class="w3-bar-item w3-button w3-padding-large">' + greeting + '</a>')
+    </script>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#tes" class="w3-bar-item w3-button" onclick="playAudio()">Musikkk 🎶</a>
+        <a href="#tes" class="w3-bar-item w3-button" onclick="pauseAudio()">Matiin Musiknya</a>
+    </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<br>
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-xlarge w3-wide w3-animate-opacity"><h1 id="title"></h1></span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">NADYA SYAHIDAH<span class="w3-hide-small"> WAFIQAH</span></span>
+  </div>
+</div>
+<div class="w3-mobile w3-center w3-display-container">
+    <span id="textme">Jangan lupa senyum yaaa</span>
+</div>
+
+<script>
+    var x = document.getElementById("myAudio");
+
+    function playAudio() {
+        x.play();
+    }
+
+    function pauseAudio() {
+        x.pause();
+    } 
+</script>
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+    var greetings = [     
+        "Semua kemajuan terjadi di luar zona nyaman",
+
+        "Jangan terlena dengan sebuah mimpi, bangunlah dan terus bekerja",
+
+        "Agar masa depanmu lebih baik,maka berusahalah mulai dari sekarang",
+
+        "Kebahagiaan itu ada, jika kamu mau menjemputnya",
+
+        "Teruslah percaya dan bekerja keraslah",
+
+        "Kurang pandai mungkin bisa diperbaiki, tapi kejujuran tidak akan pernah mudah untuk ditanamkan",
+
+        "Jangan menunggu diriku di sana, berjalanlah di sampingku bersama hingga sampai di sana",
+
+        "Awal menjadi orang baik, adalah dengan berbuat baik",
+
+        "Teruslah optimistis dan berpikir positif dalam hidupmu",
+
+        "Waktu sangatlah berharga, janganlah pernah menyia-nyiakannya",
+
+        "Seberat apapun yang dihadapi jangan pernah menjadi rapuh",
+
+        "Teruslah meminta kepada Allah, dalam keadaan apa pun",
+
+        "Jemputlah kebahagiaan agar tak lantas bersedih hati",
+
+        "Jangan pernah berburuk sangka atas rencana tuhan di dunia",
+
+        "Jadilah yang terbaik dari yang terbaik",
+
+        "Mulailah segala sesuatu dengan senyuman, karena senyuman adalah awal dari kasih sayang",
+
+        "Rindu menggantung, tangis serupa mendung, hati bersenandung, bidadari berkerudung",
+
+        "Aku memilih kau untuk ku lebur dalam suara hujan yang parau… kadang rindu tak perlu sajak merdu.",
+
+        "Derai hujan melarutkan segala rindu, menjadi ampas dalam sebuah cerita tentang aku dan kamu.",
+
+        "Kotamu basah, rindu terpisah oleh waktu yang entah, hati luluh lantah, berlari mengejar rembulan yang bersinar indah.",
+
+        "Kadang juga abu-abu. Tidak hitam, tidak pula putih. Penuh ragu selaksa awan mendung kelabu. Andai kau tau maksudku.",
+
+        "Nanti akan aku ceritakan padamu, tentang penantian yang tak kenal akhir waktu, sebab cinta bukan soal kapan, tapi ketika Tuhan sudah menetapkan.",
+
+        "Ketika pagi dinyalakan mentari, ada rindu sebab kau dihidupkan disini, tapi ribuan entah seringkali menutupi syukurmu setiap kali.",
+
+        "Di antara senja dan bulan purnama, rindu tersesat dalam waktu yang kian menua.",
+
+        "Aku cemburu pada waktu, setiap saat selalu kau cumbu, derai hujan perlahan melarutkan rindu, dalam air mataku.",
+
+        "Rinduku ialah bumerangku, tumbuh subur di ladang angkuhmu.",
+
+        "jangan lupa kita ini manusia, angkuh,sedih,bahagia,canda serta tawa milik kita bersama"
+    ];
+
+    setInterval(changeText, 10000);
+
+    function changeText() 
+    {
+        var greeting_id = Math.floor(Math.random() * greetings.length);
+        document.getElementById('textme').innerHTML = greetings[greeting_id];
+    }
+</script>
+</body>
+</html>
